@@ -16,3 +16,11 @@ def smsReply():
     return str(resp)
 
 flask_app.run(debug = True)
+# print(" ")
+# print(f'Fulfillment Text: {response.fulfillment_text}')
+# print(" ")
+# response = chat_agent.detect_intent_from_text("John", 12314) ## Try to use the phone number of a person here
+# print(f'Fulfillment Text: {response.fulfillment_text}')
+# print(' ')
+# print(f'Display Name: {response.intent.display_name}')
+# print(f'Detection Confidence: {response.intent_detection_confidence}')
