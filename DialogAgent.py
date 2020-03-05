@@ -14,10 +14,3 @@ class ChatAgent:
         query_input = dialogflow.types.QueryInput(text=text_input)
         response = self.dialogflow_session_client.detect_intent(session=session, query_input=query_input)
         return response.query_result
-
-if __name__ == '__main__':
-    chat_agent = ChatAgent('Ahmad-1')
-    response = chat_agent.detect_intent_from_text("say joke", 12314)
-    print(f'Fulfillment Text: {response.fulfillment_text}')
-    print(f'Display Name: {response.intent.display_name}')
-    print(f'Detection Confidence: {response.intent_detection_confidence}')
