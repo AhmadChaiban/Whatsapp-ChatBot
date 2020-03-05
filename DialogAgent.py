@@ -1,10 +1,9 @@
 import os
 import dialogflow_v2 as dialogflow
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "Ahmad-1-5d7d63a5b8ca.json"
-
 class ChatAgent:
     def __init__(self, projectID):
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "Exported_Agent_Path.json"
         self.dialogflow_session_client = dialogflow.SessionsClient()
         self.PROJECT_ID = projectID
 
